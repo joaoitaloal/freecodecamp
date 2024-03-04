@@ -1,0 +1,48 @@
+@charset "UTF-8";
+
+body{
+    margin: 0;
+
+    background-color: black;
+    background-image: url(https://upload.wikimedia.org/wikipedia/commons/5/51/Computer_Science_Word_Cloud.png);
+
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+header{
+    background-image: linear-gradient(to right, transparent, black, transparent);
+    text-align: center;
+    color: white;
+}
+header p,header h1{
+    margin: 0;
+}
+
+div{
+    width: 40vw;
+    margin: auto;
+    background-color: rgb(48, 47, 44);
+    border-radius: 0 0 20px 20px;
+    padding: 10px;
+
+    color: white;
+    text-align: center;
+}
+#image{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 30px;
+    max-width: 35vw;
+    height: 30vw;
+}
+
+article{
+    margin: 10px auto;
+    background-color: rgb(236, 226, 226);
+    border-radius: 10px;
+    padding: 10px;
+
+    max-width: 85vw;
+    width: 1000px;
+
+}

@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
     <title>Anotações</title>
 </head>
 <body>
@@ -13,11 +14,22 @@
         <nav><a href="primeiraprova/bgl.html">Prova formulário</a></nav>
         <h2>Responsividade</h2>
         <h2>Acessibilididade</h2>
-        <p>A tag <span class="destaque">meta name"description" content=""</span> pode ser usada para dar ao navegador uma descrição do seu conteúdo, isso é útil para ferramentas de acessibilidade e para a engine de busca</p>
+        <p>A tag <span class="destaque">meta name="description" content=""</span> pode ser usada para dar ao navegador uma descrição do seu conteúdo, isso é útil para ferramentas de acessibilidade e para a engine de busca</p>
         <p>O atributo <span class="destaque">role=""</span> também é ajuda na acessibilidade, com ele você pode dizer para que serve a tag</p>
         <p>O atributo <span class="destaque">aria-labelledby=""</span> aceita o id de outra tag e representa que a tag que está recebendo esse atributo é rotulada pela tag de mesmo id, é também um atributo de acessibilidade</p>
+        <p>Uma forma interessante de adicionar textos explicativos para serem lidos apenas por leitores de telas é criar um span com uma classe qualquer e definir essa classe com as seguintes propriedades CSS:<pre><code>position: absolute;
+width: 1px;
+height: 1px;
+padding: 0;
+margin: -1px;
+overflow: hidden;
+clip: rect(0, 0, 0, 0);
+white-space: nowrap;
+border: 0;</code></pre>
+        </p>
         <h3>Acessibilididade para formulários</h3>
         <p>Quando criar inputs para formulários é boa prática criar labels para rotular cada um e usar o atributo <span class="destaque">for=""</span> na label com o id do input</p>
+        <p><strong>Não</strong> é boa prática usar placeholders nos inputs pois os usuários podem os confundir com texto já escrito nos inputs</p>
     </main>
 </body>
 </html>
