@@ -1,0 +1,92 @@
+    @charset "UTF-8";
+
+    @media (max-width: 767px){
+        main > section > header{
+            margin: 0 -8px;
+            background-color: antiquewhite;
+            text-align: center;
+        }
+        #bigpre{
+            font-size: 0.9em;
+        }
+    }
+
+    @media (min-width: 768px){
+        body{
+            margin: 0;
+            display: grid;
+        }
+        
+        #scroll{
+            position: relative;
+        }
+        #navbar{
+            position: sticky;
+            top: 0;
+            padding: 0 2px;
+            grid-column: 1;
+            text-wrap: balance;
+        }
+        #navbar > header{
+            font-size: 1.6vw;
+        }
+        #navbar > ul{
+            padding-left: 15px;
+        }
+        #navbar > li{
+            padding: 0 1px;
+            margin: 0;
+            border-bottom: 1px solid black;
+        }
+        #navbar > li::marker{
+            content: none;
+        }
+
+        main{
+            grid-column: 2;
+        }
+        
+        main > section > header{
+            margin: 0;
+            background-color: antiquewhite;
+            text-align: center;
+        }
+
+    }
+    .nav-link{
+        color: rgb(50, 106, 209);
+        text-decoration: none;
+    }
+    .nav-link:hover{
+        text-decoration: underline;
+    }
+
+    body{
+        grid-template-columns: 15% 85%;
+        gap: 0;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+    }
+
+    header{
+        font-size: 1.3em;
+        font-variant: small-caps;
+        font-weight: bold;
+    }
+
+    code{
+        color: white;
+        display: inline-block;
+        padding: 2px;
+        background-color: rgb(73, 73, 73);
+        border: 1px solid black;
+    }
+    code > pre > .output{
+        color: rgb(127, 214, 255);
+    }
+    code > pre > .comment{
+        color: rgba(255, 255, 255, 0.418);
+    }
+    pre{
+        margin: 0;
+        background-color: inherit;
+    }

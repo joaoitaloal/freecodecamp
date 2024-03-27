@@ -1,0 +1,8 @@
+@charset "UTF-8";
+
+nav > a{
+    padding: 10px;
+}
+.destaque{
+    background-color: rgba(172, 255, 47, 0.486);
+}

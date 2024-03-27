@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Document</title>
+</head>
+<body>
+    <div id="scroll">
+    <nav id="navbar">
+        <header>Python Documentation</header>
+        <li><a class="nav-link" href="#The_Python_interpreter">The Python interpreter</a></li>
+        <li><a class="nav-link" href="#Using_Python_as_a_calculator">Using Python as a calculator</a></li>
+        <li><a class="nav-link" href="#Control_flow_tools">Control flow tools</a></li>
+        <li><a class="nav-link" href="#Input_and_Output">Input and Output</a></li>
+        <li><a class="nav-link" href="#Errors_and_Exceptions">Errors and Exceptions</a></li>
+    </nav>
+    </div>
+    <main id="main-doc">
+        <section id="The_Python_interpreter" class="main-section">
+            <header>The Python interpreter</header>
+            <p>On Windows machines where you have installed Python from the Microsoft Store, the python3.12 command will be available. If you have the py.exe launcher installed, you can use the py command. See Excursus: Setting environment variables for other ways to launch Python.</p>
+            <p>A second way of starting the interpreter is <code>python -c command [arg] ...</code>, which executes the statement(s) in command, analogous to the shell’s -c option. Since Python statements often contain spaces or other characters that are special to the shell, it is usually advised to quote command in its entirety.</p>
+        </section>
+        <section id="Using_Python_as_a_calculator" class="main-section">
+            <header>Using Python as a calculator</header>
+            <p>The interpreter acts as a simple calculator: you can type an expression at it and it will write the value. Expression syntax is straightforward: the operators +, -, * and / can be used to perform arithmetic; parentheses (()) can be used for grouping. For example:</p>
+            <code><pre>
+        2 + 2
+        <span class="output">4</span>
+        50 - 5*6
+        <span class="output">20</span>
+        (50 - 5*6) / 4
+        <span class="output">5.0</span>
+        8 / 5  <span class="comment"># division always returns a floating point number</span>
+        <span class="output">1.6</span></pre></code>
+            <p>The integer numbers (e.g. 2, 4, 20) have type int, the ones with a fractional part (e.g. 5.0, 1.6) have type float.</p>
+        </section>
+        <section id="Control_flow_tools" class="main-section">
+            <header>Control flow tools</header>
+            <ul>
+                <li>if Statements</li>
+                <li>for Statements</li>
+                <li>range() Function</li>
+                <li>break and continue Statements</li>
+                <li>pass Statements</li>
+            </ul>
+            <p>Perhaps the most well-known statement type is the if statement. For example:</p>
+            <code><pre>x = int(input("Please enter an integer: "))
+<span class="output">Please enter an integer: 42</span>
+if x < 0:
+    x = 0
+    print('Negative changed to zero')
+elif x == 0:
+    print('Zero')
+elif x == 1:
+    print('Single')
+else:
+    print('More')</pre></code>
+            <p>There can be zero or more elif parts, and the else part is optional. The keyword ‘elif’ is short for ‘else if’, and is useful to avoid excessive indentation. An if … elif … elif … sequence is a substitute for the switch or case statements found in other languages.</p>
+        </section>
+        <section id="Input_and_Output" class="main-section">
+            <header>Input and Output</header>
+            <p>There are several ways to present the output of a program; data can be printed in a human-readable form, or written to a file for future use.</p>
+            <code><pre id="bigpre">s = 'Hello, world.'
+str(s)
+<span class="output">'Hello, world.'</span>
+repr(s)
+<span class="output">"'Hello, world.'"</span>
+str(1/7)
+<span class="output">'0.14285714285714285'</span>
+x = 10 * 3.25
+y = 200 * 200
+s = 'The value of x is ' + repr(x) + ', and y is ' + repr(y) + '...'
+print(s)
+<span class="output">The value of x is 32.5, and y is 40000...</span>
+<span class="comment"># The repr() of a string adds string quotes and backslashes:</span>
+hello = 'hello, world\n'
+hellos = repr(hello)
+print(hellos)
+<span class="output">'hello, world\n'</span>
+<span class="comment"># The argument to repr() may be any Python object:</span>
+repr((x, y, ('spam', 'eggs')))
+<span class="output">"(32.5, 40000, ('spam', 'eggs'))"</span></pre></code>
+            <p>The string module contains a Template class that offers yet another way to substitute values into strings, using placeholders like $x and replacing them with values from a dictionary, but offers much less control of the formatting.</p>
+        </section>
+        <section id="Errors_and_Exceptions" class="main-section">
+            <header>Errors and Exceptions</header>
+            <p>Syntax errors, also known as parsing errors, are perhaps the most common kind of complaint you get while you are still learning Python:</p>
+            <code><pre>while True print('Hello world')
+  File "&#60;stdin&#62;", line 1
+    while True print('Hello world')
+               ^^^^^
+SyntaxError: invalid syntax
+            </pre></code>
+            <p>The parser repeats the offending line and displays little ‘arrow’s pointing at the token in the line where the error was detected. The error may be caused by the absence of a token before the indicated token. In the example, the error is detected at the function print(), since a colon (':') is missing before it. File name and line number are printed so you know where to look in case the input came from a script.</p>
+        </section>
+        <footer>
+            <p>Documentation taken from <a href="https://docs.python.org/3/tutorial/">https://docs.python.org/3/tutorial/</a></p>
+        </footer>
+    </main>
+</body>
+</html>

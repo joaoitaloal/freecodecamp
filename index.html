@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="styles.css">
     <title>Anotações</title>
 </head>
 <body>
@@ -11,7 +11,11 @@
         <h1>Página de anotações</h1>
         <p>Minhas anotações do <a href="https://www.freecodecamp.org/learn">FreeCodeCamp</a></p>
         <h2>Provas:</h2>
-        <nav><a href="primeiraprova/bgl.html">Prova formulário</a></nav>
+        <nav>
+            <a href="primeiraprova/index.html">Prova formulário</a>
+            <a href="segundaprova/index.html">Prova tributo</a>
+            <a href="terceiraprova/index.html">Prova documentação técnica</a>
+        </nav>
         <h2>Responsividade</h2>
         <h2>Acessibilididade</h2>
         <p>A tag <span class="destaque">meta name="description" content=""</span> pode ser usada para dar ao navegador uma descrição do seu conteúdo, isso é útil para ferramentas de acessibilidade e para a engine de busca</p>
@@ -30,6 +34,22 @@ border: 0;</code></pre>
         <h3>Acessibilididade para formulários</h3>
         <p>Quando criar inputs para formulários é boa prática criar labels para rotular cada um e usar o atributo <span class="destaque">for=""</span> na label com o id do input</p>
         <p><strong>Não</strong> é boa prática usar placeholders nos inputs pois os usuários podem os confundir com texto já escrito nos inputs</p>
+        <h2>Animações</h2>
+        <p>É possível criar animações simples utilizando o transform do CSS e rulesets aplicados a porcentagem do tempo de animação, exemplo: 
+    <pre><code>@keyframes cabins {
+    0% {
+        transform: rotate(0deg);
+    }
+    25% {
+        background-color: yellow;
+    }
+    50% {
+        background-color: purple;
+    }
+    100% {
+        transform: rotate(-360deg);
+    }
+}</code></pre></p>
     </main>
 </body>
 </html>
