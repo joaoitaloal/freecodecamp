@@ -1,1 +1,99 @@
 @charset "UTF-8";
+
+
+:root{
+    --jGreen: #419D78;
+    --eYellow: #e0a458;
+    --lOrange: #ffdbb5;
+    --lazuli: #38618c;
+    --cardinal: #c42847;
+}
+
+@media (min-width: 768px){
+    .product-image{
+        height: 150px;
+    }
+}
+@media (max-width: 767px){
+    .product-image{
+        height: 75px;
+    }
+    #header > nav > a{
+        font-size: 0.8em;
+    }
+}
+
+body{
+    margin: 0;
+    background-color: var(--eYellow);
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+p{
+    margin-top: 0;
+    margin-bottom: 15px;
+}
+
+#learn-more{
+    background-image: radial-gradient(rgb(0, 83, 0),var(--jGreen));
+    padding: 10px;
+    text-align: center;
+    border: 10px groove var(--cardinal);
+}
+#our-products{
+    margin-top: -11px;
+    background-image: radial-gradient(rgb(9, 95, 165),var(--lazuli));
+    padding: 10px;
+    text-align: center;
+    border: 10px groove var(--cardinal);
+}
+#contact-us{
+    margin-top: -11px;
+    background-color: white;
+    padding: 10px;
+    text-align: center;
+    border: 10px groove var(--cardinal);
+}
+
+#header{
+    background-color: var(--eYellow);
+    position: sticky;
+    top: 0;
+    padding-bottom: 15px;
+    border-bottom: 3px solid black;
+}
+
+header{
+    font-variant: small-caps;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: bolder;
+    text-align: center;
+    font-size: 1.5em;
+    margin-top: 10px;
+}
+#header-img{
+    position: relative;
+    top: 15px;
+    height: 50px;
+}
+
+#header > nav > a{
+    color: rgb(25, 122, 212);
+    text-decoration: none;
+    padding: 0px 10px;
+}
+#header > nav > a:hover{
+    text-decoration: underline;
+}
+
+#videosec{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+
+#product-image-div{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
