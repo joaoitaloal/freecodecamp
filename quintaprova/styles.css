@@ -1,0 +1,116 @@
+@charset "UTF-8";
+
+@media (min-width: 768px){
+
+}
+
+:root{
+    --black: #000000;
+    --brown: #473236;
+    --mGreen: #326339;
+    --bGrey: #2A3845;
+    --sBlue: #3A74AB;
+}
+
+body{
+    text-align: center;
+    margin: 0;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+header{
+    text-align: center;
+    font-weight: bold;
+    font-variant: small-caps;
+}
+
+#navbar{
+    position: fixed;
+    top: 0;
+    background-color: var(--black);
+    z-index: 10;
+
+    padding: 10px 0;
+}
+#navbar > a{
+    color: white;
+    padding: 0 10px;
+    text-decoration: none;
+}
+#welcome-section{
+    background-color: var(--brown);
+    color: white;
+    height: 100vh;
+}
+#welcome-section > .center > p{
+    font-size: 2em;
+}
+h1{
+    position: relative;
+    top: 4vh;
+    margin-top: 0;
+    text-align: center;
+    font-size: 3em;
+    font-weight: bold;
+    font-variant: small-caps;
+}
+
+#projects{
+    background-color: var(--sBlue);
+    background-image: linear-gradient(to top, var(--sBlue) 90%, var(--brown) );
+    height: 100vh;
+}
+#projects > header{
+    font-size: 2em;
+
+    position: relative;
+    top: 10vh;
+    margin-bottom: 10px;
+}
+.project-wrapper{
+    display: flex;
+    justify-content: center;
+}
+.project-wrapper > a{
+    color: white;
+    text-decoration: none;
+}
+.project-tile{
+    position: relative;
+    top: 10vh;
+    margin: auto;
+    background-color: var(--bGrey);
+    height: 20vw;
+    width: 20vw;
+    border: 3px solid black;
+
+    text-align: center;
+}
+.project-tile:hover{
+    background-image: radial-gradient(circle at 100%,white , var(--bGrey));
+    transition-duration: 2s;
+}
+#calc-logo{
+    display: block;
+    position: relative;
+    top: calc(10vw - 7.5vw);
+    margin: auto;
+    height: 15vw;
+}
+
+#external-links{
+    background-color: var(--bGrey);
+    background-image: linear-gradient(to top, var(--bGrey) 90%, var(--sBlue));
+    color: white;
+    height: 50vh;
+}
+#external-links > header, #external-links > p, #external-links > a{
+    position: relative;
+    top: 10vh;
+    margin-bottom: 10px;
+}
+#external-links > header{
+    font-size: 2em;
+}
+#external-links > a{
+    color: white;
+}
